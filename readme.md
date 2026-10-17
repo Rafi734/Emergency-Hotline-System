@@ -1,5 +1,4 @@
 
-
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 Answer: getElementById finds a specific element rooted with the id. 
 getElementsByClassName get all the elements connected to the class as objects.
@@ -15,7 +14,7 @@ Event Delegation is when parent acts as the listen handler for all the child. we
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 preventDefault() stops the browsers default action,Like: constant reloading 
 stopPropagation() stops eventBubbling. 
----
+
 
 
 

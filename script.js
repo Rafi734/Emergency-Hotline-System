@@ -83,14 +83,15 @@ for(const cBtn of copyBtns){
     cBtn.addEventListener("click",function(e){
         e.preventDefault();
         const copyData= parseInt(document.getElementById("copy-counter").innerText)
-        document.getElementById("copy-counter").innerText=copyData+1;
+        
 
         const card=cBtn.closest(".card");
-        const num=parseInt(card.querySelector(".service-number").innerText)
+        const num=card.querySelector(".service-number").innerText
 
          navigator.clipboard.writeText(num)
             .then(function () {
                 alert(`Copied: ${num}`);
+                document.getElementById("copy-counter").innerText=copyData+1;
             })
             .catch(function () {
                 alert("Copy failed");
